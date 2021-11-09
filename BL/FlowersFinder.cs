@@ -1,4 +1,5 @@
 ﻿using BE;
+using dal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +10,18 @@ namespace BL
 {
     public class FlowersFinder
     {
-        private FlowersFinder Dal;
+        private FlowersReader flowersReader;
 
         public FlowersFinder()
         {
-            Dal = new FlowersFinder();
+            flowersReader = new FlowersReader();
         }
 
         public List<Flower> Search(string str)
         {
-            return null;
+            return (from f in flowersReader.GetFlowers()
+                   where f.Name.Contains(str)
+                   select f).ToList();
         }
     }
 }

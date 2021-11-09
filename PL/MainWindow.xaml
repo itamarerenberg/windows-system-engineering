@@ -8,9 +8,22 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="257*"/>
-            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-
+        <WrapPanel Grid.Column="1">
+            <TextBox Name="srcTBox" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <Button Name="srcButton" Content="search" Width="75" Click="srcButton_Click"/>
+        </WrapPanel>
+        <ListView Name="lvData" ItemsSource="{Binding}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="Name" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Color}" Header="Color" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Description}" Header="Description" Width="auto"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Location}" Header="Name" Width="auto"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

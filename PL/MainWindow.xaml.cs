@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BE;
+using BL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,18 @@ namespace PL
     /// </summary>
     public partial class MainWindow : Window
     {
+        private FlowersFinder flowersFinder { get; set; }
         public MainWindow()
         {
+            flowersFinder = new FlowersFinder();
             InitializeComponent();
+        }
+
+        private void srcButton_Click(object sender, RoutedEventArgs e)
+        {
+            string srcStr = srcTBox.Text;
+            List<Flower> flowers = flowersFinder.Search(srcStr);
+            lvData.ItemsSource =  flowers != null? flowers : new List<Flower>();
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\BL.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\BL.pdb
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\BE.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\dal.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\BE.pdb
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\bin\Debug\dal.pdb
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\obj\Debug\BL.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BL\obj\Debug\BL.pdb

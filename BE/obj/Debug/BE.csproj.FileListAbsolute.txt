@@ -1,0 +1,6 @@
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\bin\Debug\BE.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\bin\Debug\BE.pdb
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\obj\Debug\BE.csprojAssemblyReference.cache
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\obj\Debug\BE.dll
+C:\Users\erenb\Source\Repos\windows-system-engineering\BE\obj\Debug\BE.pdb

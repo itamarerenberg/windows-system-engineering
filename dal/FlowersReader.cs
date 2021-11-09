@@ -9,7 +9,7 @@ namespace dal
 {
     public class FlowersReader
     {
-        public List<Flower> flowers { get; set; }
+        private List<Flower> flowers { get; set; }
         public FlowersReader()
         {
             flowers = new List<Flower> {
@@ -30,6 +30,10 @@ namespace dal
                     Image= @"https://ichef.bbci.co.uk/news/976/cpsprodpb/C448/production/_117684205_lotus.jpg"
                 }
             };
+        }
+        public IEnumerable<Flower> GetFlowers()
+        {
+            return flowers;
         }
     }
 }
