@@ -35,5 +35,22 @@ namespace PL
             List<Flower> flowers = flowersFinder.Search(srcStr);
             lvData.ItemsSource =  flowers != null? flowers : new List<Flower>();
         }
+
+        private void srcTBox_DragEnter(object sender, DragEventArgs e)
+        {
+            string srcStr = srcTBox.Text;
+            List<Flower> flowers = flowersFinder.Search(srcStr);
+            lvData.ItemsSource = flowers != null ? flowers : new List<Flower>();
+        }
+
+        private void srcTBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                string srcStr = srcTBox.Text;
+                List<Flower> flowers = flowersFinder.Search(srcStr);
+                lvData.ItemsSource = flowers != null ? flowers : new List<Flower>();
+            }
+        }
     }
 }

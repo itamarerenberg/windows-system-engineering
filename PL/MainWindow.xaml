@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <WrapPanel Grid.Column="1">
-            <TextBox Name="srcTBox" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+            <TextBox Name="srcTBox" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" KeyDown="srcTBox_KeyDown"/>
             <Button Name="srcButton" Content="search" Width="75" Click="srcButton_Click"/>
         </WrapPanel>
         <ListView Name="lvData" ItemsSource="{Binding}">
